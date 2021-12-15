@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+
+nav {
+  float: left;
+  width: 50%;
+  height: 400px;
+  background: rgb(124, 5, 1);
+  color: #ffffff;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-right: 30px;
+  padding: 0;
+} 
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+nav button {
+    padding: 10px 0px;
+    width: 200px;
+    margin: 10px;
+}
+
+section {
+    display: flex;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+table {
+  font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  height: 400px;
+}
+
+td, th {
+  border: 1px solid #5e1818;
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #550000;
+}
+
+footer {
+  background-color: rgb(114, 0, 0);
+  padding: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <img src="9f988efc8ec878e1f6ffab4c88d01531.jpg" alt="Logo" width="200" height="150">
+    <h2>Coffee House</h2>
+  </header>
+
+<section>
+    <img src="Heritage-Banner-1920X760.jpg" alt="Coffee_Image" height="500">
+
+  <nav>
+    <ul>
+        <li><button><a href="Contact.html">Contact Us</a></button></li>
+        <li><button><a href="Book.html">Book Now</a></button></li>
+    </ul>
+  </nav>
+</section>
+  
+<footer><marquee><strong>This website is designed by TEYASH BASU </strong></footer></marquee>
+
+</body>
+</html>
