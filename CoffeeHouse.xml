@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Employee.xsl"?>
+<CoffeeHouse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Employee.xsd"> 
+   <Customer>
+      <Name>Rohit Sharma</Name>
+      <Phonenum>9876541230</Phonenum>
+      <Emailid>rs@email.com</Emailid>
+      <Username>22Rohit</Username>
+      <Total-Amount>500</Total-Amount>
+      <Payment-Type>COD</Payment-Type>
+   </Customer>
+
+
+   <Customer>
+      <Name>Teyash Basu</Name>
+      <Phonenum>9676541230</Phonenum>
+      <Emailid>tb@email.com</Emailid>
+      <Username>TeyashTB</Username>
+      <Total-Amount>950</Total-Amount>
+      <Payment-Type>Net Banking</Payment-Type>
+   </Customer>
+   
+
+   <Customer>
+      <Name>Soumalya Pakrashi</Name>
+      <Phonenum>8876541230</Phonenum>
+      <Emailid>sp@email.com</Emailid>
+      <Username>Soumalya1999</Username>
+      <Total-Amount>550</Total-Amount>
+      <Payment-Type>Net Banking</Payment-Type>
+   </Customer>
+   
+
+    <Customer>
+      <Name>Hira Kumar</Name>
+      <Phonenum>886541230</Phonenum>
+      <Emailid>hm@email.com</Emailid>
+      <Username>KumarHira9</Username>
+      <Total-Amount>450</Total-Amount>
+      <Payment-Type>Debit Card</Payment-Type>
+   </Customer>
+   
+
+   <Customer>
+      <Name>Ashoke Kishna Basu</Name>
+      <Phonenum>9477264128</Phonenum>
+      <Emailid>akrishnabasu@gmail.com</Emailid>
+      <Username>KrishnaAshokeBasu12</Username>
+      <Total-Amount>499</Total-Amount>
+      <Payment-Type>COD</Payment-Type>
+   </Customer>
+   
+
+
+   <Customer>
+      <Name>Krishna Gupta</Name>
+      <Phonenum>9467890568</Phonenum>
+      <Emailid>krishna185677@gmail.com</Emailid>
+      <Username>GuptaKrishna123</Username>
+      <Total-Amount>600</Total-Amount>
+      <Payment-Type>Debit Card</Payment-Type>
+   </Customer>
+  
+
+   <Customer>
+      <Name>Amar Roy</Name>
+      <Phonenum>9477267844</Phonenum>
+      <Emailid>royamar12345@gmail.com</Emailid>
+      <Username>GuptaKrishna123</Username>
+      <Total-Amount>1000</Total-Amount>
+      <Payment-Type>Credit Card</Payment-Type>
+   </Customer>
+   
+
+
+   <Customer>
+      <Name>Sushma Verma</Name>
+      <Phonenum>9475423128</Phonenum>
+      <Emailid>sush12345@gmail.com</Emailid>
+      <Username>VermaSush3770</Username>
+      <Total-Amount>960</Total-Amount>
+      <Payment-Type>Debit Card</Payment-Type>
+   </Customer>
+   
+</CoffeeHouse>
