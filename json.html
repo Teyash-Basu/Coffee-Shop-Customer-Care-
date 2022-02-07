@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+    <script src="angular.min.js"></script>
+    <script src="json.js"></script> 
+    <link href="file.css" rel="stylesheet">
+
+</head>
+<body bgcolor="#abacec"; ng-app="Customer">
+    <div ng-controller="Cust">
+        <div style="color:#2a2caa;font-size:40px;
+                font-weight:bold;text-align:center; margin-bottom:-25px;">Customer Details</div>
+            <p style="text-align:center;font-size:18px; margin-top: 30px;">
+        <br>
+        <p>
+        <tr>
+            Rows to Display : <input type="number" step="1" min="0" max="6" ng-model="rowlimit"/><br><br>
+            <th>Search : <input type="text" placeholder="Search Customer Id" ng-model="search.customer_id"/></th><br><br>
+            <th>Search : <input type="text" placeholder="Search Name" ng-model="search.Name"/></th><br><br>
+            <th>Search : <input type="text" placeholder="Search Address" ng-model="search.Address"/></th><br><br>
+            <th>Search : <input type="text" placeholder="Search Phone No" ng-model="search.Phone_No"/></th><br><br>
+            <th>Search : <input type="text" placeholder="Search Order Id" ng-model="search.order_id"/></th><br><br>
+            <th>Search : <input type="text" placeholder="Search Total Bill" ng-model="search.Total_bill"/></th><br><br>
+            <th>Search : <input type="text" placeholder="Search Payment Id" ng-model="search.payment_id"/></th><br><br>
+        </tr>
+        </p>
+<table>
+    <tr>
+        <th>Customer Id</th>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Phone No.</th>
+        <th>Order Id</th>
+        <th>Total bill</th>
+        <th>Payment Id</th>
+    </tr>
+    <tbody>
+        <tr ng-repeat="dt in details | limitTo:rowlimit | filter:search">
+            <td>{{dt.customer_id}}</td>
+            <td>{{dt.Name|uppercase }}</td>
+            <td>{{dt.Address|lowercase}}</td>
+            <td>{{dt.Phone_No}}</td>
+            <td>{{dt.order_id}}</td>
+            <td>{{dt.Total_bill|currency}}</td>
+            <td>{{dt.payment_id}}</td>
+        </tr>
+    </tbody>
+</table>
+    </div>
+</body>
+</html>
